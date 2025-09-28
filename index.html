@@ -5,7 +5,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML5 Boilerplate</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --accent: #3a86ff;
+  --border: #cccccc;
+  --table-bg: #f8f8f8;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --fg: #eeeeee;
+  --accent: #90caf9;
+  --border: #333;
+  --table-bg: #1e1e1e;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--accent);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: var(--table-bg);
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--accent);
+  color: white;
+}
+
+pre, code {
+  font-family: monospace;
+  background: var(--table-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+button.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  color: var(--fg);
+  background-color: var(--table-bg);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+  </style>
 </head>
 
 <body>
